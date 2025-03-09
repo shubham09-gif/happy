@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Birthday Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Balloons and Confetti will be added by JavaScript -->
+
+    <!-- Birthday Cake -->
+    <div class="cake-container">
+        <div class="cake">
+            <!-- Candles will be added by JavaScript -->
+            <div class="candle-container" id="candleContainer"></div>
+            
+            <!-- Frosting & Decorations -->
+            <div class="frosting"></div>
+        </div>
+    </div>
+
+    <!-- Enhanced Wish Message Popup -->
+    <div class="wish-message" id="wishMessage">
+        <h2>✨ Happy Birthday! ✨</h2>
+        <p>Make a wish, Bestie! May all your dreams come true! 🎂✨</p>
+        <button class="btn" onclick="closeWishMessage()">Thank you! ❤️</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="../project2/index.html" class="btn">◀ Back to Memory Lane</a>
+        <a href="../project4/index.html" class="btn">Next Surprise ▶</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Close wish message function
+        function closeWishMessage() {
+            const wishMessage = document.getElementById('wishMessage');
+            if (wishMessage) {
+                wishMessage.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
